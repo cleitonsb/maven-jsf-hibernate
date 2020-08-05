@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+>
+<head>
+    <title>Title</title>
+</head>
+<h:body>
+    <h:form>
+        <h:panelGrid columns="2">
+            <h:outputLabel>Id:</h:outputLabel>
+            <h:inputText readonly="true" value="#{usuarioPessoaManagedBean.usuarioPessoa.id}" />
+
+            <h:outputLabel>Nome:</h:outputLabel>
+            <h:inputText value="#{usuarioPessoaManagedBean.usuarioPessoa.nome}" />
+
+            <h:outputLabel>Email:</h:outputLabel>
+            <h:inputText value="#{usuarioPessoaManagedBean.usuarioPessoa.email}" />
+
+            <h:outputLabel>Password:</h:outputLabel>
+            <h:inputText value="#{usuarioPessoaManagedBean.usuarioPessoa.pass}" />
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>
